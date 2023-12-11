@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
 .caroussel-main-div {
     margin: 50px auto;
     width: 100%;
@@ -13,42 +15,62 @@
 }
 
 .top-leadership-title {
-    margin: auto;
+    margin: 10px auto;
     width: fit-content;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
+    
 }
 
 .imageca, .imageca1, .imageca2, .imageca3, .imageca4,
 .imageca5, .imageca6 {
-    width: 70%;
+    width: 40%;
     margin: auto;
     height: 400px;
     background-color: red;
 }
 
 .imageca1 {
-    background-color: yellow;
+    background: url("../images/leaders/borne.jpeg") no-repeat center center ;
+    width: 40%;
+    height: 60vh;
+    background-size: cover;
 }
 
 .imageca2 {
-    background-color: green;
+    background: url("../images/leaders/Dupond-Moretti.jpg") no-repeat center center ;
+    width: 40%;
+    height: 60vh;
+    background-size: cover;
 }
 
 .imageca3
 {
-    background-color: blue;
+    background: url("../images/leaders/macron.jpg") no-repeat center center ;
+    width: 40%;
+    height: 60vh;
+    background-size: cover;
 }
 
 .imageca4 {
-    background-color: blueviolet;
+    background: url("../images/leaders/Ndiaye.jpg") no-repeat center center ;
+    width: 40%;
+    height: 60vh;
+    background-size: cover;
 }
 
 .imageca5 {
-    background-color: violet;
+    background: url("../images/leaders/Montchalin.jpg") no-repeat center center ;
+    width: 40%;
+    height: 60vh;
+    background-size: cover;
 }
 
 .imageca6 {
-    background-color: pink;
+    background: url("../images/leaders/Lecornu.jpg") no-repeat center center ;
+    width: 40%;
+    height: 60vh;
+    background-size: cover;
 }
 
 .slick-prev,

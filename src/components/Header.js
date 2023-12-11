@@ -4,8 +4,8 @@ import '../Style/header.scss';
 
 export default function Header() {
     return (
-        <div className="top-header">
-            <h1 className="top-header-title" id="top-header" >
+        <div className="top-header" id="top-header">
+            <h1 className="top-header-title" >
                 News of the communist Party of Belo
             </h1>
 

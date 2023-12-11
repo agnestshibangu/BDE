@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Section from "./components/Section";
 import Landingpage from "./components/Landingpage";
 import '../src/Style/app.scss';
+import Navbar from "./components/Navbar";
 
 
 
@@ -13,6 +14,7 @@ function App() {
     <div className="app">
       <Landingpage />
       <Header />
+      <Navbar />
       <Carousel />
       <Section />
       <Footer />

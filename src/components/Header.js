@@ -8,7 +8,6 @@ export default function Header() {
             <h1 className="top-header-title" >
                 News of the communist Party of Belo
             </h1>
-
         </div>
     )
 }

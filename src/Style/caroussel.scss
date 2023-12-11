@@ -1,0 +1,65 @@
+.caroussel-main-div {
+    margin: 50px auto;
+    width: 100%;
+    height: 350px;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider-container {
+    margin-top: 100px;
+}
+
+.top-leadership-title {
+    margin: auto;
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imageca, .imageca1, .imageca2, .imageca3, .imageca4,
+.imageca5, .imageca6 {
+    width: 70%;
+    margin: auto;
+    height: 400px;
+    background-color: red;
+}
+
+.imageca1 {
+    background-color: yellow;
+}
+
+.imageca2 {
+    background-color: green;
+}
+
+.imageca3
+{
+    background-color: blue;
+}
+
+.imageca4 {
+    background-color: blueviolet;
+}
+
+.imageca5 {
+    background-color: violet;
+}
+
+.imageca6 {
+    background-color: pink;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+}
+
+.slick-prev {
+  left: -30px;
+}
+
+.slick-next {
+  right: -30px;
+}

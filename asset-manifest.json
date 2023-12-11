@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/my-app-react/static/css/main.33606647.css",
+    "main.js": "/my-app-react/static/js/main.f0666630.js",
+    "static/media/vote-republican.jpg": "/my-app-react/static/media/vote-republican.54ca9ccd7978c27921ed.jpg",
+    "static/media/slick.svg": "/my-app-react/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/my-app-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/my-app-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/my-app-react/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/my-app-react/index.html",
+    "main.33606647.css.map": "/my-app-react/static/css/main.33606647.css.map",
+    "main.f0666630.js.map": "/my-app-react/static/js/main.f0666630.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33606647.css",
+    "static/js/main.f0666630.js"
+  ]
+}

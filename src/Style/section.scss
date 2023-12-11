@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
 .main-section {
     width: 50%;
     height: 500px;
-    background-color: grey;
-    margin: 100px auto;
+    // background-color: grey;
+    margin: 100px auto 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title, .section-text {
+    font-family: 'Poppins', sans-serif;  
 }

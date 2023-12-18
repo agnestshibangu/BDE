@@ -1,6 +1,11 @@
 .app {
-    background: #f7cf79;
+    background: linear-gradient(120deg, #00babb, #fff3f3, #173d7a);
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    height: 100vh;
 }

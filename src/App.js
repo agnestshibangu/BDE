@@ -1,22 +1,23 @@
-import React from "react";
-import Carousel from "./components/Carousel"; // Fix the typo here
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Section from "./components/Section";
+import React, { useEffect, useRef } from 'react';
 import Landingpage from "./components/Landingpage";
-import '../src/Style/app.scss';
+import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-
-
+import Banderole from "./components/Banderole";
+import Section from "./components/Section";
+import Calendar from "./components/Calendar";
+import Footer from "./components/Footer";
+import '../src/Style/app.scss';
 
 function App() {
+
   return (
     <div className="app">
       <Landingpage />
-      <Header />
+      {/* <Header /> */}
+      <Banderole />
       <Navbar />
-      <Carousel />
       <Section />
+      <Calendar />
       <Footer />
     </div>
   );

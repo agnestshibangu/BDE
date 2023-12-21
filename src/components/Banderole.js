@@ -1,44 +1,63 @@
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import '../Style/banderole.scss';
-import CustomModal from './Modal.js'
+// import Modal from '../components/Modal'
+
 
 export default function Banderole() {
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modal, setModal] = useState(false);
 
-    const openModal = () => {
-      setIsModalOpen(true);
+    const toggleModal = () => {
+      setModal(!modal);
     };
   
-    const closeModal = () => {
-      setIsModalOpen(false);
-    };
+    if(modal) {
+      document.body.classList.add('active-modal')
+    } else {
+      document.body.classList.remove('active-modal')
+    }
 
-  return (
 
-    <div>    
+    return (
+
+   
+    <div>
+
+
+        {/* <Modal /> */}
+
+        {modal && (
+        <div className="modal">
+          <div onClick={toggleModal} className="overlay"></div>
+          <div className="modal-content">
+            <h2>Hello Modal</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              perferendis suscipit officia recusandae, eveniet quaerat assumenda
+              id fugit, dignissimos maxime non natus placeat illo iusto!
+              Sapiente dolorum id maiores dolores? Illum pariatur possimus
+              quaerat ipsum quos molestiae rem aspernatur dicta tenetur. Sunt
+              placeat tempora vitae enim incidunt porro fuga ea.
+            </p>
+            <button className="close-modal" onClick={toggleModal}>
+              CLOSE
+            </button>
+          </div>
+        </div>
+      )}
+
         <div className='banderole-container'>
           <div class="container">
 
-        <CustomModal isOpen={isModalOpen} onRequestClose={closeModal} />
       
-        <div class="box"  onClick={openModal}>
+        <div class="box" onClick={toggleModal}>
             <div class="image-overlay">
                 <div class="img-title">view profile</div>
             </div>
             <div class="box-inner"></div>
         </div>
 
-        <div class="box"  onClick={openModal}>
-            <div class="image-overlay">
-                <div class="img-title">view profile</div>
-            </div>
-            <div class="box-inner"></div>
-        </div>
-    
-
-        <div class="box"  onClick={openModal}>
+        <div class="box">
             <div class="image-overlay">
                 <div class="img-title">view profile</div>
             </div>
@@ -46,7 +65,7 @@ export default function Banderole() {
         </div>
     
 
-        <div class="box"  onClick={openModal}>
+        <div class="box">
             <div class="image-overlay">
                 <div class="img-title">view profile</div>
             </div>
@@ -54,7 +73,7 @@ export default function Banderole() {
         </div>
     
 
-        <div class="box"  onClick={openModal}>
+        <div class="box">
             <div class="image-overlay">
                 <div class="img-title">view profile</div>
             </div>
@@ -62,7 +81,7 @@ export default function Banderole() {
         </div>
     
 
-        <div class="box"  onClick={openModal}>
+        <div class="box">
             <div class="image-overlay">
                 <div class="img-title">view profile</div>
             </div>
@@ -70,7 +89,7 @@ export default function Banderole() {
         </div>
     
 
-        <div class="box"  onClick={openModal}>
+        <div class="box">
             <div class="image-overlay">
                 <div class="img-title">view profile</div>
             </div>
@@ -78,7 +97,15 @@ export default function Banderole() {
         </div>
     
 
-        <div class="box"  onClick={openModal}>
+        <div class="box">
+            <div class="image-overlay">
+                <div class="img-title">view profile</div>
+            </div>
+            <div class="box-inner"></div>
+        </div>
+    
+
+        <div class="box">
             <div class="image-overlay">
                 <div class="img-title">view profile</div>
             </div>
@@ -91,6 +118,8 @@ export default function Banderole() {
         </div>
       
         </div>
+
+      
     </div>
   )
 }

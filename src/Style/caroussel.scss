@@ -58,7 +58,7 @@
     position: absolute;
     top: 0;
     height: 100vh; /* 100% of the viewport height */
-    animation: moveCircles 5s linear infinite; /* Adjust duration as needed */
+    animation: moveCircles 10s linear infinite; /* Adjust duration as needed */
   }
   
   .circle, .circle-serie2 {
@@ -77,27 +77,29 @@
     position: absolute;
     top: 0;
     height: 100vh; /* 100% of the viewport height */
-    animation: moveCircles2 5s linear infinite;
-    animation-delay: 3s;
+    animation: moveCircles2 10s linear infinite;
+    animation-delay: 1s;
  }
 
  @keyframes moveCircles {
     0% {
-      transform: translateY(0);
+      transform: translateY(1000px);
     }
     100% {
-      transform: translateY(calc(100vh - 100px)); /* Adjust based on circle size */
+      transform: translateY(calc(100vh - 1200px)); /* Adjust based on circle size */
     }
+}
+
+@keyframes moveCircles2 {
+    0% {
+        transform: translateY(1000px);
+      }
+      100% {
+        transform: translateY(calc(100vh - 500px)); /* Adjust based on circle size */
+      }
 }
   
-  @keyframes moveCircles2 {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(calc(100vh - 100px)); /* Adjust based on circle size */
-    }
-}
+  
   
   /* Style each circle individually if needed */
   .circle:nth-child(1) { bottom: 90%; }

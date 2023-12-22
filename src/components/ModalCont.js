@@ -20,7 +20,7 @@ export default function ModalContent() {
             <div class="circle">7</div>            
           </div>
 
-          {/* <div class="circle-container serie2">
+          <div class="circle-container serie2">
             <div class="circle-serie2">1</div>
             <div class="circle-serie2">2</div>
             <div class="circle-serie2">3</div>
@@ -28,7 +28,7 @@ export default function ModalContent() {
             <div class="circle-serie2">5</div>
             <div class="circle-serie2">6</div>
             <div class="circle-serie2">7</div>            
-          </div> */}
+          </div>
                   
     </div>
   )

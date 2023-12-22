@@ -1,73 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
-
-.caroussel-main-div {
-    margin: 50px auto;
+.modal-inner {
     width: 100%;
-    height: 350px;
-    top: 50px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 100%;
+    background-color: white;
+}
+
+.geometry-box {
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
 }
 
-.slider-container {
-    margin-top: 100px;
+.round, .round-half {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
 }
 
-.top-leadership-title {
-    margin: 10px auto;
-    width: fit-content;
-    font-family: 'Poppins', sans-serif;  
-}
-
-.imageca, .imageca1, .imageca2, .imageca3, .imageca4,
-.imageca5, .imageca6 {
-    margin: auto;
-    width: 500px;
-    height: 500px;
-    background-color: red;
-}
-
-.imageca1 {
-    background: url("../images/leaders/Florent.png") no-repeat center center ;
-    background-size: cover;
-}
-
-.imageca2 {
-    background: url("../images/leaders/Jayz.webp") no-repeat center center ;
-    background-size: cover;
-}
-
-.imageca3
-{
-    background: url("../images/leaders/Agnes.webp") no-repeat center center ;
-    background-size: cover;
-}
-
-.imageca4 {
-    background: url("../images/leaders/Kelly.png") no-repeat center center ;
-    background-size: cover;
-}
-
-.imageca5 {
-    background: url("../images/leaders/Theo.webp") no-repeat center center ;
-    background-size: cover;
-}
-
-.imageca6 {
-    background: url("../images/leaders/Thori.webp") no-repeat center center ;
-    background-size: cover;
-}
-
-.slick-prev,
-.slick-next {
-  font-size: 24px;
-}
-
-.slick-prev {
-  left: -30px;
-}
-
-.slick-next {
-  right: -30px;
-}

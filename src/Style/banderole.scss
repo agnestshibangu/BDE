@@ -9,13 +9,13 @@ body.active-modal {
     font-size: 18px;
 }
 
-// .modal {
-//     position: absolute;
-
-// }
-
-// 
-
+.modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 990;
+    overflow-y: auto;
+}
 
 .overlay {
     position: fixed;
@@ -23,7 +23,7 @@ body.active-modal {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.419); /* Adjust the background color and opacity as needed */
+    background: rgba(0, 0, 0, 0.49); /* Adjust the background color and opacity as needed */
     z-index: 900;
 }
 
@@ -31,17 +31,15 @@ body.active-modal {
     position: fixed;
     z-index: 990;
     overflow-y: auto;
-    left: 25%;
-    top: 25%;
-    // transform: translate(-50%, -210%);
+    top: 0;
+    height: 100vh;
     line-height: 1.4;
     background: #000000ab;
     color: white;
     padding: 14px 28px;
     border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
-   
+    width: 100%;
+    
 }
 
 .modal-content-text {

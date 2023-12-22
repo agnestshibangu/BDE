@@ -22,7 +22,8 @@ export default function Banderole() {
 
    
     <div>
-
+        
+        
 
         {/* <Modal /> */}
 
@@ -31,7 +32,7 @@ export default function Banderole() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Hello Modal</h2>
-            <p>
+            <p className="modal-content-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               perferendis suscipit officia recusandae, eveniet quaerat assumenda
               id fugit, dignissimos maxime non natus placeat illo iusto!

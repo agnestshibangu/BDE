@@ -30,7 +30,7 @@ body.active-modal {
 .modal-content {
     position: fixed;
     z-index: 990;
-    overflow-y: auto;
+    overflow-y: hidden;
     top: 0;
     height: 100vh;
     line-height: 1.4;
@@ -73,6 +73,7 @@ body.active-modal {
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    z-index: 999;
 }
 
 

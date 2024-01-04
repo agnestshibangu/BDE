@@ -21,7 +21,13 @@ export default function ModalContent() {
       </div>    
 
       <div className='plane-div'>
-        
+        <div className='top-div'>
+
+        </div>
+        <div className='bottom-div'>
+          
+        </div>
+
       </div>
       
       {/* <div className="circle5"></div>

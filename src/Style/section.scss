@@ -1,14 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
 .main-section {
-    width: 50%;
-    height: 500px;
+    width: 80%;
+    height: fit-content;
     // background-color: grey;
     margin: 100px auto 50px auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.section-title, .section-text {
+.section-title, .section-text, .section-small-elements {
     font-family: 'Poppins', sans-serif;  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: visible;
 }
+
+.section-text {
+    margin-top: 10px;
+}
+
+
+.section-small-elements {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.small-element {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+
+
+/* media queries */ 
+
+@media only screen and (max-width: 500px) {
+    .section-small-elements {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 500px;
+    }
+}
+
+// @media screen and (min-width: 500px) {
+//     .box {
+//         flex: 1 1 50%;
+//     }
+// }
+
+// @media screen and (min-width: 700px) {
+//     .box {
+//         flex: 1 1 10%;
+//     }
+// }
+
+

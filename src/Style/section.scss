@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
 .main-section {
-    width: 80%;
+    width: 95%;
     height: fit-content;
     // background-color: grey;
     margin: 100px auto 50px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.432);
+    border-radius: 15px;
+    padding: 20px;
+    
 }
 
 .section-title, .section-text, .section-small-elements {
@@ -24,7 +28,7 @@
 
 
 .section-small-elements {
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -40,12 +44,13 @@
 
 /* media queries */ 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .section-small-elements {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         height: 500px;
+        margin-top: 30px;
     }
 }
 

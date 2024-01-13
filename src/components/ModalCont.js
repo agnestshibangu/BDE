@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react';
 import '../Style/caroussel.scss';
+import data from '../data';
 
 export default function ModalContent() {
+  const [people, setPeople] = useState(data);
+  const circle = 'circle';
+
+  const [activeSlide, setActiveSlide] = useState(1);
+
+  const handleSlideClick = (slideNumber) => {
+    console.log("hello");
+    console.log('Clicked on slide', slideNumber);
+    setActiveSlide(slideNumber);
+  };
+
+
   return (
     <div className='modal-inner'>
           <div className='geometry-box'>
@@ -10,32 +23,32 @@ export default function ModalContent() {
             <div className='round'/>
           </div>
       <div className='circles-box'>
-        <div className="circle"></div>
-        <div className="circle2 circle"></div>
-        <div className="circle3 circle"></div> 
-        <div className="circle4 circle"></div>
-        <div className="circle5 circle"></div>
-        <div className="circle6 circle"></div> 
-        <div className="circle7 circle"></div>
-        <div className="circle8 circle"></div>
-      </div>    
+      
+    
+          {people.map((person) => {
+            const {membername, id, image} = person;
+
+            return (
+              <div className={`circle ${circle + id}`} onClick={() => handleSlideClick(id)}>
+                 <div className='band-name'>
+                  <h2>{membername}</h2>
+                </div>
+                <img className='image-member-circle' src={image} />
+              </div>
+            );
+          })}
+
+      </div>
 
       <div className='plane-div'>
         <div className='top-div'>
-
         </div>
         <div className='bottom-div'>
-          
+          <p className='slidep'>{activeSlide}</p>
         </div>
 
       </div>
       
-      {/* <div className="circle5"></div>
-      <div className="circle6"></div>
-      <div className="circle7"></div>  */}
-
-
-
 
     </div>
   )

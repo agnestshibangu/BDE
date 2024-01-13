@@ -37,72 +37,70 @@ export default function Banderole() {
       )}
 
         <div className='banderole-container'>
-          <div class="container">
+          <div className="container">
 
       
-        <div class="box" onClick={toggleModal}>
-            <div class="image-overlay">
-                <div class="img-title">view profile</div>
+        <div className="box" onClick={toggleModal}>
+            <div className="image-overlay">
+                <div className="img-title">view profile</div>
             </div>
-            <div class="box-inner"></div>
+            <div className="box-inner"></div>
         </div>
 
-        <div class="box">
-            <div class="image-overlay">
-                <div class="img-title">view profile</div>
+        <div className="box">
+            <div className="image-overlay">
+                <div className="img-title">view profile</div>
             </div>
-            <div class="box-inner"></div>
-        </div>
-    
-
-        <div class="box">
-            <div class="image-overlay">
-                <div class="img-title">view profile</div>
-            </div>
-            <div class="box-inner"></div>
+            <div className="box-inner"></div>
         </div>
     
 
-        <div class="box">
-            <div class="image-overlay">
-                <div class="img-title">view profile</div>
+        <div className="box">
+            <div className="image-overlay">
+                <div className="img-title">view profile</div>
             </div>
-            <div class="box-inner"></div>
+            <div className="box-inner"></div>
         </div>
     
 
-        <div class="box">
-            <div class="image-overlay">
-                <div class="img-title">view profile</div>
+        <div className="box">
+            <div className="image-overlay">
+                <div className="img-title">view profile</div>
             </div>
-            <div class="box-inner"></div>
+            <div className="box-inner"></div>
         </div>
+    
+        <div className="box">
+            <div className="image-overlay">
+                <div className="img-title">view profile</div>
+            </div>
+            <div className="box-inner"></div>
+        </div>
+          
+        <div className="box">
+            <div className="image-overlay">
+                <div className="img-title">view profile</div>
+            </div>
+            <div className="box-inner"></div>
+        </div>
+    
+       
+        <div className="box">
+            <div className="image-overlay">
+                <div className="img-title">view profile</div>
+            </div>
+            <div className="box-inner"></div>
+        </div>
+    
+        <div className="box">
+            <div className="image-overlay">
+                <div className="img-title">view profile</div>
+            </div>
+            <div className="box-inner"></div>
+        </div>
+    
     
 
-        <div class="box">
-            <div class="image-overlay">
-                <div class="img-title">view profile</div>
-            </div>
-            <div class="box-inner"></div>
-        </div>
-    
-
-        <div class="box">
-            <div class="image-overlay">
-                <div class="img-title">view profile</div>
-            </div>
-            <div class="box-inner"></div>
-        </div>
-    
-
-        <div class="box">
-            <div class="image-overlay">
-                <div class="img-title">view profile</div>
-            </div>
-            <div class="box-inner"></div>
-        </div>
-    
-    
     
 
         </div>

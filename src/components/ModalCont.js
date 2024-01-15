@@ -6,12 +6,15 @@ export default function ModalContent() {
   const [people, setPeople] = useState(data);
   const circle = 'circle';
 
-  const [activeSlide, setActiveSlide] = useState(1);
+  const [activeSlideId, setActiveSlideId] = useState(1);
+  const [activeSlideIllustration, setActiveSlideIllustration] = useState(1);
+  const [activeSlideBio, setActiveSlideBio] = useState(1);
 
-  const handleSlideClick = (slideNumber) => {
-    console.log("hello");
-    console.log('Clicked on slide', slideNumber);
-    setActiveSlide(slideNumber);
+
+  const handleSlideClick = (slideNumber, illustration, bio) => {
+    setActiveSlideId(slideNumber);
+    setActiveSlideIllustration(illustration);
+    setActiveSlideBio(bio);
   };
 
 
@@ -26,10 +29,10 @@ export default function ModalContent() {
       
     
           {people.map((person) => {
-            const {membername, id, image} = person;
+            const {membername, id, image, illustration, bio} = person;
 
             return (
-              <div className={`circle ${circle + id}`} onClick={() => handleSlideClick(id)}>
+              <div className={`circle ${circle + id}`} onClick={() => handleSlideClick(id, illustration, bio)}>
                  <div className='band-name'>
                   <h2>{membername}</h2>
                 </div>
@@ -42,14 +45,14 @@ export default function ModalContent() {
 
       <div className='plane-div'>
         <div className='top-div'>
+        <img className='image-illustration' src={activeSlideIllustration || ''} />
         </div>
         <div className='bottom-div'>
-          <p className='slidep'>{activeSlide}</p>
+          <p className='slide-bio'>{activeSlideBio || ''}</p>
         </div>
 
       </div>
-      
-
+    
     </div>
   )
 }

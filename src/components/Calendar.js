@@ -10,9 +10,13 @@ export default function Calendar() {
         
         <div className='calendar-box'>
           <div className='calendar-list'>
-            <p className='calendar-list-item'>je suis le premier evenement</p>
-            <p className='calendar-list-item'>je suis le deuxieme evenemen</p>
-            <p className='calendar-list-item'>je suis le troisiene evenement</p>
+            <p className='calendar-list-item'>29 janvier 2024</p>
+            <p className='calendar-list-subitem'>9 AM</p>
+            <p className='calendar-list-subitem'>12 AM</p>
+            <p className='calendar-list-subitem'>4 PM</p>
+            <p className='calendar-list-item'></p>
+            <p className='calendar-list-item'>4 fevrier 2024</p>
+            <p className='calendar-list-subitem'>3 PM</p>
           </div>
         </div>
 

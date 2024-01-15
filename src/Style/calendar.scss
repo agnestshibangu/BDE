@@ -32,12 +32,14 @@
   left: 10%;
   width: fit-content;
   overflow: visible;
+
 }
 
 .calendar-list-item {
   font-family: 'Anton', sans-serif;
   font-size: 25px;
   font-style: italic;
+  padding: 3px;
 }
 
 .arrows-box {
@@ -50,3 +52,9 @@
   flex-direction: column;
 }
 
+.calendar-list-subitem { 
+  font-family: 'Anton', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  margin-left: 15%;
+}

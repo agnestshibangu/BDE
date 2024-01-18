@@ -19,39 +19,28 @@ export default function ModalContent() {
 
 
   return (
-    <div className='modal-inner'>
-          <div className='geometry-box'>
-            <div className='vertical-line'/>
-            <div className='round-half'/>
-            <div className='round'/>
-          </div>
-      <div className='circles-box'>
-      
-    
-          {people.map((person) => {
-            const {membername, id, image, illustration, bio} = person;
+    <div>
 
-            return (
-              <div className={`circle ${circle + id}`} onClick={() => handleSlideClick(id, illustration, bio)}>
-                 <div className='band-name'>
-                  <h2>{membername}</h2>
-                </div>
-                <img className='image-member-circle' src={image} />
+      <div class="void" id="void">
+              <div class="crop">
+              <div class="overlay"></div>
+
+              <ul id="card-list" style={{'--count': 6}}>
+                  <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+                  <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+                  <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+                  <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+                  <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+                          <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+              </ul>
+              
+              <div class="last-circle"></div>
+              <div class="second-circle"></div>
               </div>
-            );
-          })}
-
+              <div class="mask"></div>
+              <div class="center-circle"></div>
       </div>
-
-      <div className='plane-div'>
-        <div className='top-div'>
-        <img className='image-illustration' src={activeSlideIllustration || ''} />
-        </div>
-        <div className='bottom-div'>
-          <p className='slide-bio'>{activeSlideBio || ''}</p>
-        </div>
-
-      </div>
+      
     
     </div>
   )

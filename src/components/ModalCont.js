@@ -4,7 +4,7 @@ import data from '../data';
 
 export default function ModalContent() {
   const [people, setPeople] = useState(data);
-  const circle = 'circle';
+  const card = 'card';
 
   const [activeSlideId, setActiveSlideId] = useState(1);
   const [activeSlideIllustration, setActiveSlideIllustration] = useState(1);
@@ -25,13 +25,20 @@ export default function ModalContent() {
               <div class="crop">
               <div class="overlay"></div>
 
-              <ul id="card-list" style={{'--count': 6}}>
-                  <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
-                  <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
-                  <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
-                  <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
-                  <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
-                          <li><div class="card"><a href=""><span class="model-name">Gretel-ACTGAN</span><span>Model for generating highly dimensional, mostly numeric, tabular data</span></a></div></li>
+              <ul id="card-list" style={{'--count': 9, display: 'flex', justifyContent: 'space-around' }}>
+              {people.map((person) => {
+                const {membername, id, image, illustration, bio} = person;
+
+                return ( 
+                      <li>
+                        <div className="card"  onClick={() => handleSlideClick(id, illustration, bio)}>
+                          <span class="model-name">{membername}</span>
+                          <span>Model for generating highly dimensional, mostly numeric, tabular data</span>
+                        </div>
+                      </li>                
+                );
+              })}
+            
               </ul>
               
               <div class="last-circle"></div>

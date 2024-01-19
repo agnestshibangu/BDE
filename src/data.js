@@ -5,11 +5,13 @@ import TheoImage from './images/leaders/icone_tgirardi.webp'
 import JBImage from './images/leaders/icone_jedurand.webp';
 import ThomasImage from './images/leaders/icone_thomas.webp';
 import ThoribalImage from './images/leaders/icone_thoribal.webp';
+import AntoineImage from './images/leaders/icone_thoribal.webp';
 import AgnesImage from './images/leaders/icone_agnes.webp';
 import KellyIllustration from './images/leaders/web_hov_pasteur_fullwidth.webp';
 import ThomasIllustration from './images/leaders/bio_-_thomas.webp';
 import AgnesIllustration from './images/leaders/Bio_-_Agnes.webp';
 import ThoribalIllustration from './images/leaders/Bio_-_Thoribal.webp';
+import AntoineIllustration from './images/leaders/Bio_-_Thoribal.webp';
 
 const people = [
     {
@@ -62,6 +64,13 @@ const people = [
       image: AgnesImage,
       membername: 'Agnes',
       illustration: AgnesIllustration,
+      bio: ""
+    },
+    {
+      id: 9,
+      image: AntoineImage,
+      membername: 'Antoine',
+      illustration: AntoineIllustration,
       bio: ""
     }
   ];

@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #00BABB;
   border-radius: 15px;
   height: 300px;
   position: relative;
@@ -40,6 +39,7 @@
   font-size: 25px;
   font-style: italic;
   padding: 3px;
+  cursor: pointer;
 }
 
 .arrows-box {
@@ -50,11 +50,66 @@
   bottom: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 120px;
+}
+
+.arrow-down, .arrow-up {
+  cursor: pointer;
+}
+
+.arrow-down {
+  top: 50%;
 }
 
 .calendar-list-subitem { 
   font-family: 'Anton', sans-serif;
   font-size: 15px;
-  font-style: italic;
   margin-left: 15%;
+  transition: all 0.3s;
+}
+
+.calendar-list-subitem:hover { 
+  transform: skewX(-20deg);
+}
+
+.calendar-list-item {
+  color: #18272F;
+  position: relative;
+  text-decoration: none;
+}
+
+// .calendar-list-item::before {
+//   content: '';
+//   position: absolute;
+//   width: 100%;
+//   height: 4px;
+//   border-radius: 4px;
+//   background-color: #18272F;
+//   bottom: 0;
+//   left: 0;
+//   transform-origin: right;
+//   transform: scaleX(0);
+//   transition: transform .3s ease-in-out;
+// }
+
+// .calendar-list-item:hover::before {
+//   transform-origin: left;
+//   transform: scaleX(1);
+// }
+
+.calendar-slide {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-list-subitem {
+  cursor: pointer;
 }

@@ -1,54 +1,60 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Style/caroussel.scss';
 import data from '../data';
 
-export default function ModalContent() {
+export default function ModalContent({ itemId }) {
   const [people, setPeople] = useState(data);
   const card = 'card';
 
-  const [activeSlideId, setActiveSlideId] = useState(1);
-  const [activeSlideIllustration, setActiveSlideIllustration] = useState(1);
-  const [activeSlideBio, setActiveSlideBio] = useState(1);
+  const [activeSlideIllustration, setActiveSlideIllustration] = useState('');
 
+  useEffect(() => {
+    // Update activeSlideIllustration when itemId changes
+    const selectedPerson = people.find(person => person.id === itemId);
+    setActiveSlideIllustration(selectedPerson ? selectedPerson.illustration : '');
+  }, [itemId, people]);
 
-  const handleSlideClick = (slideNumber, illustration, bio) => {
-    setActiveSlideId(slideNumber);
+  const [activeSlideBio, setActiveSlideBio] = useState('');
+
+  const handleSlideClick = (illustration, bio) => {
     setActiveSlideIllustration(illustration);
     setActiveSlideBio(bio);
   };
 
-
   return (
     <div>
+      <div className="void" id="void">
+        <div className="crop">
+          <div className="overlay">
+            <div className='top-div'>
+              <img className='image-illustration' src={activeSlideIllustration || ''} alt={`Illustration for ID: ${itemId}`} />
+            </div>
+            <div className='bottom-div'>
+              <p className='slide-bio'>{activeSlideBio || ''}</p>
+            </div>
+          </div>
 
-      <div class="void" id="void">
-              <div class="crop">
-              <div class="overlay"></div>
+          <ul id="card-list" style={{ '--count': 8, display: 'flex', justifyContent: 'space-around' }}>
+            {people.map((person) => {
+              const { membername, id, image, illustration, bio } = person;
 
-              <ul id="card-list" style={{'--count': 9, display: 'flex', justifyContent: 'space-around' }}>
-              {people.map((person) => {
-                const {membername, id, image, illustration, bio} = person;
+              return (
+                <li key={id}>
+                  <div className="card" onClick={() => handleSlideClick(illustration, bio)}>
+                    <img className='image-member' src={image} alt={`Member: ${membername}`} />
+                    <span className="model-name">{membername}</span>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
 
-                return ( 
-                      <li>
-                        <div className="card"  onClick={() => handleSlideClick(id, illustration, bio)}>
-                          <span class="model-name">{membername}</span>
-                          <span>Model for generating highly dimensional, mostly numeric, tabular data</span>
-                        </div>
-                      </li>                
-                );
-              })}
-            
-              </ul>
-              
-              <div class="last-circle"></div>
-              <div class="second-circle"></div>
-              </div>
-              <div class="mask"></div>
-              <div class="center-circle"></div>
+          <div className="last-circle"></div>
+          <div className="second-circle"></div>
+        </div>
+        <div className="mask"></div>
+        <div className="center-circle"></div>
       </div>
-      
-    
     </div>
-  )
+  );
 }

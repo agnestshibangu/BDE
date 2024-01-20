@@ -65,7 +65,7 @@
 
 
 .overlay-title, .overlay-paragraph {
-    font-size: 100px;
+    font-size: 40px;
     letter-spacing: 5px;
     color: white;
     z-index: 10;
@@ -97,6 +97,7 @@
     font-size: 50px;
     letter-spacing: 0px;
     font-family: "Teko", sans-serif;
+    margin-top: 50px;
 }
 
 
@@ -105,109 +106,6 @@
     padding: 20px;
     cursor: pointer;
 }
-
-// .overlay-paragraph {
-//     animation: slideIn2 1s ease-out; 
-//     animation-delay: 1s;
-// }
-
-// .btn-enter {
-//     animation: slideIn3 1s ease-out; 
-//     animation-delay: 2s;
-// }
-
-
-// @keyframes slideIn1 {
-//     from {
-//       transform: translateX(-100%);
-//       opacity: 0;
-//     }
-//     to {
-//       transform: translateX(0);
-//       opacity: 1;
-//     }
-// }
-
-
-// @keyframes slideIn2 {
-//     from {
-//       transform: translateX(-100%);
-//       opacity: 0;
-//     }
-//     to {
-//       transform: translateX(0);
-//       opacity: 1;
-//     }
-// }
-
-
-// @keyframes slideIn3 {
-//     from {
-//       transform: translateX(-100%);
-//     }
-//     to {
-//       transform: translateX(0);
-//     }
-//   }
-
-
-
-// .chevron {
-// position: absolute;
-// width: 28px;
-// height: 8px;
-// opacity: 0;
-// transform: scale3d(0.5, 0.5, 0.5);
-// animation: move 3s ease-out infinite;
-// }
-
-// .chevron:first-child {
-// animation: move 3s ease-out 1s infinite;
-// }
-
-// .chevron:nth-child(2) {
-// animation: move 3s ease-out 2s infinite;
-// }
-
-// .chevron:before,
-// .chevron:after {
-// content: ' ';
-// position: absolute;
-// top: 0;
-// height: 100%;
-// width: 51%;
-// background: #fff;
-// }
-
-// .chevron:before {
-// left: 0;
-// transform: skew(0deg, 30deg);
-// }
-
-// .chevron:after {
-// right: 0;
-// width: 50%;
-// transform: skew(0deg, -30deg);
-// }
-
-// @keyframes move {
-// 25% {
-//     opacity: 1;
-
-// }
-// 33% {
-//     opacity: 1;
-//     transform: translateY(30px);
-// }
-// 67% {
-//     opacity: 1;
-//     transform: translateY(40px);
-// }
-// 100% {
-//     opacity: 0;
-//     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-// }
-// }
 
 .text {
 display: block;
@@ -263,7 +161,11 @@ to {
   
     .overlay-paragraph { 
         font-size: 45px;
-        margin-top: -45px;
+        margin-top: -20px;
+    }
+
+    .overlay-title {
+        font-size: 50px;
     }
 
     .text-block {

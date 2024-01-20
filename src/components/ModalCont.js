@@ -12,6 +12,7 @@ export default function ModalContent({ itemId }) {
     // Update activeSlideIllustration when itemId changes
     const selectedPerson = people.find(person => person.id === itemId);
     setActiveSlideIllustration(selectedPerson ? selectedPerson.illustration : '');
+    setActiveSlideBio(selectedPerson.bio);
   }, [itemId, people]);
 
   const [activeSlideBio, setActiveSlideBio] = useState('');
@@ -30,7 +31,7 @@ export default function ModalContent({ itemId }) {
               <img className='image-illustration' src={activeSlideIllustration || ''} alt={`Illustration for ID: ${itemId}`} />
             </div>
             <div className='bottom-div'>
-              <p className='slide-bio'>{activeSlideBio || ''}</p>
+              <p className='slide-bio'>{activeSlideBio}</p>
             </div>
           </div>
 
@@ -41,7 +42,7 @@ export default function ModalContent({ itemId }) {
               return (
                 <li key={id}>
                   <div className="card" onClick={() => handleSlideClick(illustration, bio)}>
-                    <img className='image-member' src={image} alt={`Member: ${membername}`} />
+                    <img className='image-member' src={image} alt={`Member: ${membername}`} />1
                     <span className="model-name">{membername}</span>
                   </div>
                 </li>

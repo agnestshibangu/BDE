@@ -39,12 +39,12 @@ export default function Banderole() {
         <div className='banderole-container'>
           <div className="container">
             {people.map((person) => {
-              const { membername, id, image, illustration, bio } = person;
+              const { membername, id, image, illustration, bio, login} = person;
   
               return (
                 <div className="box" onClick={() => toggleModal(id)}>
                   <div className="image-overlay">
-                    <div className="img-title">{membername}</div>
+                    <div className="img-title">{login}</div>
                   </div>
                   <img className="box-inner" src={image} alt={membername} />
                 </div>

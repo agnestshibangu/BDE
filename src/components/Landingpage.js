@@ -58,8 +58,8 @@ export default function Landingpage() {
             <div className={scrolled ? 'scrolled overlay-dark' : 'overlay-dark'}/>
             <div className='line' />
             <div className="text-block">
-                <h2 className="overlay-title">campagne 2023</h2>
-                <p className="overlay-paragraph">Le futur de 42 perpignan est arrivé</p>
+                <h2 className="overlay-title">Comité Constitué des Camarades Codeurs</h2>
+                <p className="overlay-paragraph">ou “C4”, parce que notre liste, c’est de la bombe 🤪</p>
            
             </div>
 

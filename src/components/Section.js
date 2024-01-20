@@ -5,21 +5,11 @@ import '../Style/section.scss';
 export default function Section() {
     return (
         <div className="main-section">
-            <h2 className="section-title">Le programme</h2>
+            <h2 className="section-title">SALUTATIONS CAMARADES !</h2>
             <p className="section-text">
-            42, c’est une formation en informatique d’excellence pour tous et toutes. Au programme de cette école différente et innovante : une approche par projets pour progresser et développer des compétences techniques et humaines recherchées sur le marché du travail.
+            Bienvenue sur le portail de notre glorieuse liste. Tu trouveras ici la composition de notre bienveillant Comité, notre manifeste (révolutionnaire) ainsi qu’un calendrier des mobilisations collectives prévues pour notre semaine de campagne. À terme, ce site pourrait devenir celui du BDE si nous sommes élus. 
             </p>
-            <div className="section-small-elements">
-                <div className="small-element">
-                    
-                </div>
-                <div className="small-element">
-
-                </div>
-                <div className="small-element">
-
-                </div>
-            </div>
+    
         </div>
     )
 }

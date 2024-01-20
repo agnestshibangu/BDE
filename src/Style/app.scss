@@ -1,5 +1,5 @@
 .app {
-    background: linear-gradient(120deg, #00babb, #fff3f3, #173d7a);
+    background: linear-gradient(120deg, #5e5e5e, #222222, #00BABB);
     padding: 0;
     margin: 0;
    // overflow-x: hidden;
@@ -8,3 +8,19 @@
 .section {
     height: 100vh;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00BABB;
+    box-shadow: 0px 5px 5px white;
+  }

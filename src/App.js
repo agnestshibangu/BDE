@@ -6,6 +6,7 @@ import Banderole from "./components/Banderole";
 import Section from "./components/Section";
 import Calendar from "./components/Calendar";
 import Footer from "./components/Footer";
+import Programme from "./components/Programme"
 
 import '../src/Style/app.scss';
 
@@ -17,9 +18,9 @@ function App() {
       <Landingpage />
       {/* <Header /> */}
       <Banderole />
-    
-      <Navbar />
+
       <Section />
+      <Programme />
       <Calendar /> 
       <Footer />
     </div>

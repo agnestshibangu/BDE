@@ -49,7 +49,8 @@ const people = [
       id: 4,
       image: TheoImage,
       membername: 'Theo',
-      fonction: 'pôle communication',
+      login: 'Tgerardi',
+      fonction: 'chargé de communication',
       illustration: TheoIllustration,
       bio: "Le 15 août 2000, la ville de Montpellier fut le théâtre d'un événement des plus mystérieux avec la naissance de Théo Gerardin. C’est un être entouré d'un halo de mystère, particulièrement concernant ses activités (ou plutôt, son absence d'activités) durant la période de 1933 à 1945. Le camarade Théo insiste, d’une manière presque troublante, pour que l'on certifie qu'il n'a absolument rien fait, absolument aucune action à signaler durant cette période. Un point sur lequel il demeure étonnamment ferme. Mais la véritable énigme de Théo Gerardin ne réside pas seulement dans ce passé qu'il s'efforce de nier, mais également dans son apparition à l'école 42. Personne ne sait vraiment comment il a émergé dans les clusters. Il est toujours présent et pourtant insaisissable, comme flottant entre les dimensions de l'espace et du temps. Le camarade Gerardin manie l'art de la parole et de l'image avec une dextérité qui confine à la magie. Ses compétences en communication sont telles qu’il semble toucher nos esprits de manière"
     },
@@ -77,7 +78,7 @@ const people = [
       membername: 'Thomas',
       login: 'Thoribal',
       illustration: ThoribalIllustration,
-      fonction: 'chargé des tutorats',
+      fonction: 'chargé du tutorat',
       bio:  "C’est le 20 novembre 2005 que devait naître le camarade Thomas Ribalta, à Perpignan. Influencé toute son enfance par ce haut-lieu de culture, il fit montre d’une telle avance intellectuelle par rapport à ses paires de la génération Z que l'on choisit unanimement de dater le début de la génération Alpha à sa naissance. Avec une précocité stupéfiante, Thomas, alors même qu’il n’était pas encore né, prit part à l'une des aventures les plus audacieuses de l'époque moderne : l'élaboration du premier Macintosh. Cependant, l'histoire officielle n'a jamais reconnu son importante contribution. La société Apple, craignant d'associer son image à celle du travail des enfants, choisit de ne pas créditer le jeune fœtus. Ironiquement, cette expérience marqua un tournant, poussant l'entreprise à s'ouvrir de plus en plus à l'exploitation des enfants, une pratique qu'elle finit par accepter totalement. Bien que le plus jeune de notre liste, le camarade Ribalta détient la sagesse des anciens. Chargé des tutorats au sein de notre liste, il se dévoue corps et âme à l'éducation et à l'élévation de ses camarades, les aidant quand il peut, et traduisant des tutoriels turcs entre-temps pour se détendre. "
     },
     {

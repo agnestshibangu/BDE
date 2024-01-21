@@ -9,15 +9,20 @@ export default function Calendar() {
   const [events, setEvents] = useState(dataCalendar);
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  const [activeSlideTime, setActiveSlideTime] = useState(events[0]?.subevents[0]?.time || '');
-  const [activeSlideDate, setActiveSlideDate] = useState(events[0]?.date || '');
-  const [activeSlideDescription, setActiveSlideDescription] = useState(events[0]?.subevents[0]?.description || '');
-  const [activeDate, setActiveDate] = useState(true);
+  const [activeSlideTime, setActiveSlideTime] = useState(events[0].subevents[0].time);
+  const [activeSlideDate, setActiveSlideDate] = useState(events[0].date);
+  const [activeSlideTitle, setActiveSlideTitle] = useState(events[0].subevents[0].title);
+  const [activeSlideDescription, setActiveSlideDescription] = useState(events[0].subevents[0].description);
+  const [activeSlideMembers, setActiveSlideMembers] = useState(events[0].subevents[0].members);
+  const [activeSlideLocation, setActiveSlideLocation] = useState(events[0].subevents[0].location);
 
-  const handleSlideClick = (time, date, description) => {
+  const handleSlideClick = (time, date, description, title, members, location) => {
     setActiveSlideTime(time);
     setActiveSlideDate(date);
+    setActiveSlideTitle(title);
     setActiveSlideDescription(description);
+    setActiveSlideMembers(members);
+    setActiveSlideLocation(location);
   };
 
   const handleArrowClick = (direction) => {
@@ -29,44 +34,49 @@ export default function Calendar() {
   };
 
   useEffect(() => {
-    setActiveSlideDate(events[currentIndex]?.date || '');
-    setActiveSlideTime(events[currentIndex]?.subevents[0]?.time || '');
-    setActiveSlideDescription(events[currentIndex]?.subevents[0]?.description || '');
+    setActiveSlideDate(events[currentIndex].date);
+    setActiveSlideTime(events[currentIndex].subevents[0].time);
+    setActiveSlideTitle(events[currentIndex].subevents[0].description);
+    setActiveSlideDescription(events[currentIndex].subevents[0].title);
+    setActiveSlideMembers(events[currentIndex].subevents[0].members);
+    setActiveSlideLocation(events[currentIndex].subevents[0].location);
   }, [currentIndex, events]);
 
   return (
     <div className='calendar-section'>
-      <div className='calendar-slide'>
-        {/* <p className='slide-content'>{activeSlideDate}</p>
-        <p className='slide-content'>{activeSlideTime}</p> */}
-        <p className='slide-content' onClick>{activeSlideDescription}</p>
-      </div>
-  
-      <div className='calendar-box'>
-        <div className='calendar-list'>
-          {events.map((event, index) => (
-            <div key={index}>
-              <p className='calendar-list-item'>{event.date}</p>
-              <div className='subevents-container'>
-                {event.subevents.map((subevent, subIndex) => (
-                  <p
-                    key={subIndex}
-                    className='calendar-list-subitem'
-                    onClick={() => handleSlideClick(subevent.time, event.date, subevent.description)}
-                  >
-                    {subevent.time}
-                  </p>
-                ))}
-              </div>
+
+        <h2 className="section-title">CALENDRIER</h2>
+
+        <div className='calendar-inner'>
+
+            <div className='calendar-list'>
+              {events.map((event, index) => (
+                <div key={index}>
+                  <p className='calendar-list-item'>{event.date}</p>
+                  <div className='subevents-container'>
+                    {event.subevents.map((subevent, subIndex) => (
+                      <p
+                        key={subIndex}
+                        className='calendar-list-subitem'
+                        onClick={() => handleSlideClick(subevent.time, event.date, subevent.title, subevent.description, subevent.members, subevent.location)}
+                      >
+                        {subevent.time}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          
+            <div className='event-infos-section'>
+              <p className='slide-title'>{activeSlideDescription}</p>
+              <p className='slide-time'>Horaire : {activeSlideTime}</p>
+              <p className='slide-location'>Lieu : {activeSlideLocation}</p>
+              <p className='slide-members'>Membres présents : {activeSlideMembers}</p>
+              <p className='slide-description'>{activeSlideTitle}</p>
+            
+            </div>
         </div>
-      </div>
-  
-      {/* <div className='arrows-box'>
-        <IoIosArrowUp className='arrow-up' onClick={() => handleArrowClick('up')} />
-        <IoIosArrowDown className='arrow-down' onClick={() => handleArrowClick('down')} />
-      </div> */}
     </div>
   );
 

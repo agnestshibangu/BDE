@@ -11,7 +11,7 @@ export default function ModalContent({ itemId }) {
   useEffect(() => {
     // Update activeSlideIllustration when itemId changes
     const selectedPerson = people.find(person => person.id === itemId);
-    setActiveSlideIllustration(selectedPerson ? selectedPerson.illustration : '');
+    setActiveSlideIllustration(selectedPerson.illustration);
     setActiveSlideBio(selectedPerson.bio);
   }, [itemId, people]);
 
@@ -28,7 +28,7 @@ export default function ModalContent({ itemId }) {
         <div className="crop">
           <div className="overlay">
             <div className='top-div'>
-              <img className='image-illustration' src={activeSlideIllustration || ''} alt={`Illustration for ID: ${itemId}`} />
+              <img className='image-illustration' src={activeSlideIllustration} alt={`Illustration for ID: ${itemId}`} />
             </div>
             <div className='bottom-div'>
               <p className='slide-bio'>{activeSlideBio}</p>
@@ -42,7 +42,7 @@ export default function ModalContent({ itemId }) {
               return (
                 <li key={id}>
                   <div className="card" onClick={() => handleSlideClick(illustration, bio)}>
-                    <img className='image-member' src={image} alt={`Member: ${membername}`} />1
+                    <img className='image-member' src={image} alt={`Member: ${membername}`} />
                     <span className="model-name">{membername}</span>
                   </div>
                 </li>

@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .calendar-section {
-  width: 95%;
-  height: 900px;
-  // background-color: grey;
+  width: 90%;
+  height: fit-content;
   margin: 100px auto 50px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   border-radius: 15px;
-  height: 300px;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.432);
+  padding: 35px;
+}
+
+.calendar-inner {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
 }
 
 .calendar-title {
@@ -27,11 +31,9 @@
 }
 
 .calendar-list { 
-  position: absolute;
-  left: 10%;
   width: fit-content;
   overflow: visible;
-
+  margin-left: 10%;
 }
 
 .calendar-list-item {
@@ -80,25 +82,6 @@
   text-decoration: none;
 }
 
-// .calendar-list-item::before {
-//   content: '';
-//   position: absolute;
-//   width: 100%;
-//   height: 4px;
-//   border-radius: 4px;
-//   background-color: #18272F;
-//   bottom: 0;
-//   left: 0;
-//   transform-origin: right;
-//   transform: scaleX(0);
-//   transition: transform .3s ease-in-out;
-// }
-
-// .calendar-list-item:hover::before {
-//   transform-origin: left;
-//   transform: scaleX(1);
-// }
-
 .calendar-slide {
   background-color: rgba(255, 255, 255, 0.432);
   height: 100%;
@@ -113,3 +96,22 @@
 .calendar-list-subitem {
   cursor: pointer;
 }
+
+.slide-title, .slide-time, .slide-description, .slide-location, .slide-members {
+  font-family: "Anton", sans-serif;
+}
+
+.slide-title {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+
+
+.event-infos-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+

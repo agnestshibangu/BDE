@@ -115,3 +115,27 @@
   justify-content: space-around;
 }
 
+
+@media only screen and (max-width: 600px) {
+
+  .calendar-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event-infos-section {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .calendar-list {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .event-infos-section {
+    text-align: center;
+  }
+}
+

@@ -42,20 +42,6 @@
     background-color: red;
 }
 
-
-
-/* media queries */ 
-
-@media only screen and (max-width: 600px) {
-    .section-small-elements {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 500px;
-        margin-top: 30px;
-    }
-}
-
 .program-points-container {
     margin-top: 20px;
     display: flex;
@@ -77,9 +63,29 @@
     border-radius: 20px;
     border: 2px white;
     height: 120px;
+    text-align: center;
 }
 
 .icon-programm {
     font-size: 40px;
 }
 
+/* media queries */ 
+
+@media only screen and (max-width: 600px) {
+    .section-small-elements {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 500px;
+        margin-top: 30px;
+    }
+
+    .section-text {
+        width: 90%;
+    }
+
+    .program-point { 
+        width: 100%;
+    }
+}

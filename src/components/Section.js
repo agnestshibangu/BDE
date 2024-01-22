@@ -9,7 +9,6 @@ export default function Section() {
             <p className="section-text">
             Bienvenue sur le portail de notre glorieuse liste. Tu trouveras ici la composition de notre bienveillant Comité, notre manifeste (révolutionnaire) ainsi qu’un calendrier des mobilisations collectives prévues pour notre semaine de campagne. À terme, ce site pourrait devenir celui du BDE si nous sommes élus. 
             </p>
-    
         </div>
     )
 }

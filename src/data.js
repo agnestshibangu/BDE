@@ -66,7 +66,7 @@ const people = [
     {
       id: 6,
       image: ThomasImage,
-      membername: 'Thomas',
+      membername: 'Thomas Tr.',
       login: 'Truello',
       illustration: ThomasIllustration,
       fonction: 'chargé des tutorats',
@@ -75,7 +75,7 @@ const people = [
     {
       id: 7,
       image: ThoribalImage,
-      membername: 'Thomas',
+      membername: 'Thomas Th.',
       login: 'Thoribal',
       illustration: ThoribalIllustration,
       fonction: 'chargé du tutorat',

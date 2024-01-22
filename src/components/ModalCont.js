@@ -31,7 +31,11 @@ export default function ModalContent({ itemId }) {
               <img className='image-illustration' src={activeSlideIllustration} alt={`Illustration for ID: ${itemId}`} />
             </div>
             <div className='bottom-div'>
-              <p className='slide-bio'>{activeSlideBio}</p>
+              <div className='bottom-div-inner'>
+                <div className='tiret'></div>
+                <h2 className='title-bio'>BIOGRAPHIE</h2>
+                <p className='slide-bio'>{activeSlideBio}</p>
+              </div>
             </div>
           </div>
 
@@ -42,8 +46,10 @@ export default function ModalContent({ itemId }) {
               return (
                 <li key={id}>
                   <div className="card" onClick={() => handleSlideClick(illustration, bio)}>
-                    <img className='image-member' src={image} alt={`Member: ${membername}`} />
-                    <span className="model-name">{membername}</span>
+                    <div className="card-inner">
+                      <img className='image-member' src={image} alt={`Member: ${membername}`} />
+                      <span className="model-name">{membername}</span>
+                    </div>
                   </div>
                 </li>
               );

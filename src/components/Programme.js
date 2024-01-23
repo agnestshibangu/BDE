@@ -37,7 +37,7 @@ export default function Section() {
                     );
                 })}
             </div>
-            <div>
+            <div className="subpoints-container">
                 
                     {activePoint.subpoints.map((subpoint, index) => (
                         <p key={index} className='subpoint'>- {subpoint.point}</p>

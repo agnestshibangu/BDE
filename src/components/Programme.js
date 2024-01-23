@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../Style/section.scss';
 import '../Style/programme.scss';
 import dataProgram from '../dataProgram';
+import { FaRegHandPointRight } from "react-icons/fa6";
 
 export default function Section() {
 
@@ -21,7 +22,7 @@ export default function Section() {
 
     return (
         <div className="main-section">
-            <h2 className="section-title">PROGRAMME</h2>
+            <h2 className="section-title section-title-generic">PROGRAMME</h2>
             <div className="program-points-container">
                 {point.map((points) => {
                     const { id, title } = points;
@@ -40,7 +41,7 @@ export default function Section() {
             <div className="subpoints-container">
                 
                     {activePoint.subpoints.map((subpoint, index) => (
-                        <p key={index} className='subpoint'>- {subpoint.point}</p>
+                        <p key={index} className='subpoint'><FaRegHandPointRight className='point-icon'/> {subpoint.point}</p>
                     ))}
                 
             </div>

@@ -1,5 +1,12 @@
 .subpoint {
-    margin-top: 10px;
+    margin-top: 45px;
+    letter-spacing: 1px;
+    font-family: "Anton", sans-serif;
+}
+
+.program-point {
+    font-family: "Anton", sans-serif;
+    cursor: pointer;
 }
 
 .program-points-container {
@@ -8,4 +15,9 @@
 
 .subpoints-container {
     margin-top: 40px;
+    width: 90%;
+}
+
+.point-icon {
+    margin-right: 20px;
 }

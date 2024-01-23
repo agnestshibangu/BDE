@@ -24,7 +24,7 @@
 }
 
 .section-text {
-    margin-top: 10px;
+    margin-top: 40px;
     width: 55%;
 }
 
@@ -73,6 +73,13 @@
     margin-top: 30px;
     width: 60%;
     text-align: center;
+}
+
+.section-title-generic {
+    background-color: #00BABB!important;
+    width: fit-content;
+    margin: auto;
+    font-family: "Anton", sans-serif!important;
 }
 
 /* media queries */ 

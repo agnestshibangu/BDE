@@ -45,7 +45,7 @@ export default function Calendar() {
   return (
     <div className='calendar-section'>
 
-        <h2 className="section-title">CALENDRIER</h2>
+        <h2 className="section-title section-title-generic">CALENDRIER</h2>
 
         <div className='calendar-inner'>
 
@@ -72,7 +72,6 @@ export default function Calendar() {
               <p className='slide-title'>{activeSlideDescription}</p>
               <p className='slide-time'>Horaire : {activeSlideTime}</p>
               <p className='slide-location'>Lieu : {activeSlideLocation}</p>
-              <p className='slide-members'>Membres présents : {activeSlideMembers}</p>
               <p className='slide-description'>{activeSlideTitle}</p>
             
             </div>

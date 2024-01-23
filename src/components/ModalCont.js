@@ -33,7 +33,7 @@ export default function ModalContent({ itemId }) {
             <div className='bottom-div'>
               <div className='bottom-div-inner'>
                 <div className='tiret'></div>
-                <h2 className='title-bio'>BIOGRAPHIE</h2>
+                <h2 className='title-bio section-title-generic'>BIOGRAPHIE</h2>
                 <p className='slide-bio'>{activeSlideBio}</p>
               </div>
             </div>

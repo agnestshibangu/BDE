@@ -39,7 +39,7 @@ const events = [
       subevents: [
         { time: '2 PM to 3 PM', title: 'Retour sur le jeu de la semaine & récompense',  description: ' Retour et récompense du jeu de la semaine.', members: 'Antoine', location: 'Holodeck', id: '6' },
         { time: '7 PM to 11 PM', title: 'Soirée de clôture de la campagne',  description: 'Soirée de clôture de la campagne.', members: 'tous', location: 'Hyrule, Cantina, Bifrost', id: '6' },
-        { time: '11 PM to 1.30 / 2 AM', title: 'After à l’Arena-Bar', description: 'After de la soirée de 42 à l’Arena Bar. Ventes de bracelets prévus pour la soirée.', members: 'tous', location: 'Arena Bar', id: '6' }
+        { time: '11 PM to 2 AM', title: 'After à l’Arena-Bar', description: 'After de la soirée de 42 à l’Arena Bar. Ventes de bracelets prévus pour la soirée.', members: 'tous', location: 'Arena Bar', id: '6' }
 
       ]
     }

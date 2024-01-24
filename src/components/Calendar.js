@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Style/calendar.scss';
-import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowUp } from "react-icons/io";
 import dataCalendar from '../dataCalendar';
+import { AiFillCaretRight } from "react-icons/ai";
 
 export default function Calendar() {
 
@@ -70,8 +69,8 @@ export default function Calendar() {
           
             <div className='event-infos-section'>
               <p className='slide-title'>{activeSlideDescription}</p>
-              <p className='slide-time'>Horaire : {activeSlideTime}</p>
-              <p className='slide-location'>Lieu : {activeSlideLocation}</p>
+              <p className='slide-time'>Horaire <AiFillCaretRight /> {activeSlideTime}</p>
+              <p className='slide-location'>Lieu <AiFillCaretRight /> {activeSlideLocation}</p>
               <p className='slide-description'>{activeSlideTitle}</p>
             
             </div>

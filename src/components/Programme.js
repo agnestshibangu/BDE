@@ -9,6 +9,7 @@ export default function Section() {
     const [point, setPoint] = useState(dataProgram);
     const [isClicked, setIsClicked] = useState(false);
     const [activePoint, setActivePoint] = useState(point[0]);
+    
 
     const handleClick = (id) => {
         setIsClicked(true);
@@ -40,11 +41,16 @@ export default function Section() {
             </div>
             <div className="subpoints-container">
                 
-                    {activePoint.subpoints.map((subpoint, index) => (
-                        <p key={index} className='subpoint'><FaRegHandPointRight className='point-icon'/> {subpoint.point}</p>
-                    ))}
-                
-            </div>
+            {activePoint.subpoints.map((subpoint, index) => (
+                <div key={index}>
+                    <p className='subtitle'><FaRegHandPointRight className='point-icon'/> {subpoint.subtitle}</p>
+                    <p className='subpoint'>{subpoint.point}</p>
+                </div>
+            ))}
+
         </div>
+
+    </div>
+
     )
 }

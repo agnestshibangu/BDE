@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;');
 
 .calendar-section {
   width: 90%;
@@ -38,7 +40,8 @@
 }
 
 .calendar-list-item {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
+  font-weight: 200;
   font-size: 20px;
   font-style: italic;
   padding: 3px;
@@ -68,7 +71,7 @@
 }
 
 .calendar-list-subitem { 
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 15px;
   margin-left: 15%;
   transition: all 0.3s;
@@ -100,7 +103,19 @@
 }
 
 .slide-title, .slide-time, .slide-description, .slide-location, .slide-members {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.slide-title {
   font-family: "Anton", sans-serif;
+}
+
+.slide-time, .slide-location {
+  margin-top: 30px;
+}
+
+.slide-description {
+  margin-top: 40px;
 }
 
 .slide-title {
@@ -114,7 +129,7 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  //justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.682);
   margin-top: 40px;
   padding: 20px;

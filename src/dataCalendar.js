@@ -12,7 +12,8 @@ const events = [
       id: 2,
       date: '30 janvier 2024',
       subevents: [
-        { time: '2 PM to 3.30 PM', title: 'Lancement du tutorat “Clean Code : coder rapidement et proprement”',  description: 'Une présentation du concept des tutorats. Ensuite, un retex par jedurand de sa lecture du livre “Clean Code” par Robert C. Martin. Finalement, une présentation par Truello de trucs et astuces (raccourcis, attitudes) à adopter pour coder plus propre et plus rapidement.', location: 'Holodeck', members: 'Jean-Baptiste, Thomas T., Thomas R.', id: '4'}
+        { time: '12 AM to 2 PM', title: 'vente de pokebowls',  description: 'vente de pokebowls appétissants', location: 'Bar à eau', members: 'Jean-Baptiste, Thomas T., Thomas R.', id: '4'},
+        { time: '2 PM to 3.30 PM', title: 'Lancement du tutorat “Clean Code : coder rapidement et proprement”',  description: 'Une présentation du concept des tutorats. Ensuite, un retex par jedurand de sa lecture du livre “Clean Code” par Robert C. Martin. Finalement, une présentation par Truello de trucs et astuces (raccourcis, attitudes) à adopter pour coder plus propre et plus rapidement.', location: 'Holodeck', members: 'Jean-Baptiste, Thomas T., Thomas R.', id: '4'} 
       ]
     },
     {

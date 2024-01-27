@@ -234,6 +234,8 @@ li:nth-child(8), li:nth-child(8) .card {
 
 .title-bio {
 	color: black;
+	font-size: 15px;
+	letter-spacing: 2px;
 }
 
 .bottom-div-inner {
@@ -266,7 +268,7 @@ li:nth-child(8), li:nth-child(8) .card {
 }
 
 .slide-bio { 
-	font-size: 10px;
+	font-size: 12px;
 	text-align: center;
 	width: 90%;
 	letter-spacing: 1px;
@@ -279,6 +281,7 @@ li:nth-child(8), li:nth-child(8) .card {
 	height: 2px;
 	background-color: black;
 }
+
 
 
 @media only screen and (max-width: 600px) { 
@@ -299,10 +302,21 @@ li:nth-child(8), li:nth-child(8) .card {
 		height: 70%;
 	}
 
+
 	.title-bio {
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
 
-	
+	.slide-bio {
+		font-size: 10px;
+	}
+
+}
+
+
+@media only screen and (min-width: 900px) {
+	.slide-bio {
+		font-size: 13px;
+	}
 }

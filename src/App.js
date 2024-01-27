@@ -6,14 +6,24 @@ import Banderole from "./components/Banderole";
 import Section from "./components/Section";
 import Calendar from "./components/Calendar";
 import Footer from "./components/Footer";
-import Programme from "./components/Programme"
+import Programme from "./components/Programme";
+import { Helmet } from 'react-helmet';
+import logoImage from './images/leaders/Florent.png';
 
 import '../src/Style/app.scss';
 
-function App() {
+function App () {
+
+  const jsonData = {
+    siteName: "votre futur BDE"
+  };
 
   return (
     <div className="app">
+       <Helmet>
+        <title>{jsonData.siteName}</title>
+        <link rel="icon" href={logoImage} />
+      </Helmet>
      
       <Landingpage />
       {/* <Header /> */}

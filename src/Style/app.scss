@@ -2,7 +2,7 @@
     // background: linear-gradient(120deg, #00BABB, white, #00BABB);
     // background: linear-gradient(90deg, rgba(0,186,187,1) 0%, rgba(0,0,0,1) 100%);
     
-    background: linear-gradient(90deg, rgba(0,186,187,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgb(112, 233, 233) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
     padding: 0;
     margin: 0;
    // overflow-x: hidden;
@@ -11,19 +11,3 @@
 .section {
     height: 100vh;
 }
-
-/* width */
-::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #00BABB;
-    box-shadow: 0px 5px 5px white;
-  }

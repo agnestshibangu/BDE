@@ -266,13 +266,15 @@ li:nth-child(8), li:nth-child(8) .card {
 }
 
 .slide-bio { 
-	font-size: 11px;
-	text-align: center;
-	width: 90%;
-	height: 90%;
+	font-size: 13px;
+	// text-align: center;
+	width: 96%;
+	height: 95%;
 	letter-spacing: 1px;
 	color: black;
 	font-weight: 600;
+	overflow-wrap: break-word;
+	padding: 8px;
 }
 
 .tiret {
@@ -308,6 +310,10 @@ li:nth-child(8), li:nth-child(8) .card {
 	.slide-bio {
 		font-size: 10px;
 	}
+
+	li {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 900px) { 
@@ -324,10 +330,6 @@ li:nth-child(8), li:nth-child(8) .card {
 	.slide-bio {
 		font-size: 9px;
 	}
-}
 
-@media only screen and (min-width: 1100px) {  
-	.slide-bio {
-		font-size: 12px;
-	}
+
 }

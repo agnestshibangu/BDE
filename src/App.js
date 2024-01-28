@@ -8,7 +8,7 @@ import Calendar from "./components/Calendar";
 import Footer from "./components/Footer";
 import Programme from "./components/Programme";
 import { Helmet } from 'react-helmet';
-import logoImage from './images/leaders/Florent.png';
+import logoImage from './images/leaders/logo.webp';
 
 import '../src/Style/app.scss';
 
@@ -22,11 +22,10 @@ function App () {
     <div className="app">
        <Helmet>
         <title>{jsonData.siteName}</title>
-        <link rel="icon" href={logoImage} />
+        <link rel="icon" href={logoImage} ></link>
       </Helmet>
      
       <Landingpage />
-      {/* <Header /> */}
       <Banderole />
 
       <Section />

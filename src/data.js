@@ -1,4 +1,4 @@
-import FlorentImage from './images/leaders/icone_fbelotti.webp';
+ import FlorentImage from './images/leaders/icone_fbelotti.webp';
 import KellyImage from './images/leaders/icone_kbrenner.webp';
 import JezaImage from './images/leaders/icone_jeguerin.webp';
 import TheoImage from './images/leaders/icone_tgirardi.webp'
@@ -51,7 +51,7 @@ const people = [
       login: 'jedurand',
       fonction: 'trésorier',
       illustration: JbIllustration,
-      membername: 'Jean Baptiste',
+      membername: 'Jean-Baptiste',
       bio: "Il est dit que, le jour de sa naissance le 02 novembre 2000 à Metz, le camarade Durand sortit de sa mère tout en armes, un clavier à la main, déjà fort de sa stature d’adulte, prêt à coder et à briser les chaînes de l’ignorance, pour lui-même et pour tous ses camarades.Très vite, son génie lui valut d’être reconnu par ses paires. Au cœur de la Seconde Guerre Mondiale, il fut l'artisan clé dans le décodage de la machine Enigma, soufflant la plupart des réponses à Turing afin qu’il parvienne à passer l’examen de la postérité. Dans son élan pour nourrir le corps et l'esprit de toute l’humanité, Jean-Baptiste a ensuite embrassé une entreprise populaire, tenant une honorable sandwicherie. Elle devait cependant être fermée par une cabale, effrayée par l’avant-gardisme culinaire du camarade Durand. Aujourd’hui encore, le camarade Durand continue de forger les outils du futur, en mettant sa force de travail au service du projet visionnaire “Frui” et en assumant la charge de trésorier au sein de notre noble Comité."
     },
     {

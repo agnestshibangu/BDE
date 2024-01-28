@@ -43,6 +43,7 @@
     height: 40vh;
     width: fit-content;
     overflow: visible;
+    top: 425px;
 }
 
 .scroll-block {
@@ -138,7 +139,6 @@ to {
 
     .text-block {
         position: absolute;
-        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -171,9 +171,9 @@ to {
         font-size: 50px;
     }
 
-    .text-block {
-        top: 70%;
-    }
+    // .text-block {
+    //     top: 70%;
+    // }
 
 } 
 
